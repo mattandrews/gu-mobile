@@ -471,7 +471,7 @@ if ( ! function_exists('prep_url'))
  */
 if ( ! function_exists('url_title'))
 {
-	function url_title($str, $separator = 'dash', $lowercase = FALSE)
+	function url_title($str, $separator = 'dash', $lowercase = TRUE)
 	{
 		if ($separator == 'dash')
 		{
