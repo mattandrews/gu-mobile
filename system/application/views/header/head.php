@@ -33,11 +33,13 @@
 	
 	a.inline-pic {
 	    float: left;
-	    margin-right: 10px;
+	    margin: 10px 10px 0px 0px;
 	}
 	div.article {
-		margin-bottom: 10px;
 		clear: left;
+		overflow: hidden;
+		padding-bottom: 5px;
+		border-bottom: 1px dotted #ccc;
 	}
 	div.article p {
 		margin-top: 0px;
@@ -51,5 +53,8 @@
 	.min-width-480px img.gallery { width: 480px; }
 	.min-width-768px img.gallery { width: 748px; }
 	
-	
+	div.logo {
+		text-align: center;
+		margin: 10px 0px 5px 0px;
+	}
 	</style>
