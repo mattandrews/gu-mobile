@@ -1,21 +1,14 @@
 <script>
 $(document).ready(function(){
 
-	$(document).bind('swipe', function(event, ui){
-		alert('swiped');
-		console.log(event);
-		console.log(ui);
-	});
-	/*
-	$(document).bind('swipeleft',function(event, ui){
-		alert('left');
+	$('#container').bind('swipeleft',function(event, ui){
 		$('#gallery-prev').click();
 	});
 
-	$(document).bind('swiperight',function(event, ui){
+	$('#container').bind('swiperight',function(event, ui){
 		$('#gallery-next').click();
 	});
-	*/
+	
 	
 });
 </script>

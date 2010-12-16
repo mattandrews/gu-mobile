@@ -11,7 +11,7 @@
 |	http://example.com/
 |
 */
-$config['base_url']	= "http://gnm31437.int.gnl/gu-mobile/";
+$config['base_url']	= "http://192.168.1.3/gu-mobile/";
 
 /*
 |--------------------------------------------------------------------------
