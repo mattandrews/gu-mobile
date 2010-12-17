@@ -1,60 +1,11 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
-	<title><?php echo $title; ?> | gu-mobile v0.1</title>
+	<title><?php echo $title; ?> | gu-mobile v0.1a</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css" />
 	
-	<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery-mobile.css" />
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/gu-base.css" />
 	
-	
-	<style type="text/css">
-
-	h1.section {
-	    background: #ededed;
-	    min-height: 29px;
-	    border-top: 3px solid #D61D00;
-	    font: 18px droid serif, georgia;
-	    padding: 4px;
-	    margin: 0px;
-	    clear: left;
-	}
-	h2 {
-	    font: 16px georgia;
-	    margin: 0px;
-        padding: 10px 0px;
-	}
-	h2 a {
-	    text-decoration: none;
-	    font-weight: normal !important;
-	    font: 16px droid serif, georgia !important;
-	}
-	
-	a.inline-pic {
-	    float: left;
-	    margin: 10px 10px 0px 0px;
-	}
-	div.article {
-		clear: left;
-		overflow: hidden;
-		padding-bottom: 5px;
-		border-bottom: 1px dotted #ccc;
-	}
-	div.article p {
-		margin-top: 0px;
-	}
-	
-	.ui-li-desc {
-		white-space: normal !important;
-	}
-	
-	.min-width-320px img.gallery { width: 300px; }
-	.min-width-480px img.gallery { width: 480px; }
-	.min-width-768px img.gallery { width: 748px; }
-	
-	div.logo {
-		text-align: center;
-		margin: 10px 0px 5px 0px;
-	}
-	</style>
+	<script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/jquery-mobile.js"></script>

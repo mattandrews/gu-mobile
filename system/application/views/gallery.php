@@ -17,13 +17,15 @@ $(document).ready(function(){
 	
 	<div data-role="header" data-nobackbtn="true" data-position="inline">
 		<?php if($offset > 1) { $page = $offset-1;?>
-			<a id="gallery-prev" rel="external" data-rel="ignore-me" href="<?php echo site_url('browse/gallery/' . str_replace('/', '_', $gallery['id']) . '/' . $page); ?>" data-icon="arrow-r"  class="ui-btn-left">Previous</a>
+			<a id="gallery-prev" rel="external" data-theme="b" data-icon="arrow-l" href="<?php echo site_url('browse/gallery/' . str_replace('/', '_', $gallery['id']) . '/' . $page); ?>" data-icon="arrow-r"  class="ui-btn-left">Previous</a>
 		<?php } ?>
 		<h1>Gallery: <?php echo $offset . '/' . count($gallery['photos'])?></h1>
 		<?php if($offset < count($gallery['photos'])) { $page = $offset+1;?>
-			<a id="gallery-next" rel="external" data-rel="ignore-me" href="<?php echo site_url('browse/gallery/' . str_replace('/', '_', $gallery['id']) . '/' . $page); ?>" data-icon="arrow-l" data-role="button" class="ui-btn-right">Next</a>
+			<a id="gallery-next" rel="external" data-theme="b" data-icon="arrow-r" data-iconpos="right" href="<?php echo site_url('browse/gallery/' . str_replace('/', '_', $gallery['id']) . '/' . $page); ?>" data-icon="arrow-l" data-role="button" class="ui-btn-right">Next</a>
 		<?php } ?>
 	</div>
+	
+	<?php show_navbar(); ?>
 
 	<div data-role="content">
 		

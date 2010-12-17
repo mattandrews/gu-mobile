@@ -1,0 +1,138 @@
+
+	h1.section {
+	    background: #ededed;
+	    min-height: 29px;
+	    border-top: 3px solid #D61D00;
+	    font: 18px droid serif, georgia;
+	    padding: 4px;
+	    margin: 0px;
+	    clear: left;
+	}
+	
+	h1.section.sport { border-top-color: #008000; }
+	h1.section.commentisfree { border-top-color: #0061A6; }
+	h1.section.culture { border-top-color: #D1008B; }
+	h1.section.business { border-top-color: #3246AB; }
+	h1.section.lifeandstyle { border-top-color: #AD532F; }
+	h1.section.money { border-top-color: #8F1AB6; }
+	
+	h1 a {
+	    font-weight: normal !important;
+	    text-decoration: none;
+	}
+
+	h2 {
+	    font: 16px georgia;
+	    margin: 0px;
+        padding: 10px 0px;
+	}
+	h2 a {
+	    text-decoration: none;
+	    font-weight: normal !important;
+	    font: 16px droid serif, georgia !important;
+	}
+	
+	a.inline-pic {
+	    float: left;
+	    margin: 10px 10px 0px 0px;
+	}
+	div.article {
+		clear: left;
+		overflow: hidden;
+		padding-bottom: 5px;
+		border-bottom: 1px dotted #ccc;
+	}
+	div.article p {
+		margin-top: 0px;
+	}
+	
+	.ui-li-desc {
+		white-space: normal !important;
+	}
+	
+	.min-width-320px img.gallery { width: 300px; }
+	.min-width-480px img.gallery { width: 480px; }
+	.min-width-768px img.gallery { width: 748px; }
+	
+	div.logo {
+		text-align: center;
+		margin: 10px 0px 5px 0px;
+	}
+
+
+
+.article p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.article blockquote {
+    border-left: 6px solid #ccc;
+    padding-left: 6px;
+	margin-left: 20px;   
+}
+
+.article h2 {
+    padding-top: 5px;
+    font: 14px/18px arial, sans-serif;
+}
+
+.byline,
+.related {
+    border-top: 1px solid #D61D00;
+    border-bottom: 1px solid #D61D00;
+    margin-bottom: 10px;
+    padding: 3px 0px;
+}
+
+.byline h3 {
+    margin: 0px 0px 2px 0px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.byline p {
+    font-size: 12px;
+}
+p.caption {
+    font: 12px arial;
+    color: #999;
+}
+.related li {
+    margin: 5px 0px;
+    list-style-type: square;
+    font: 14px arial;
+}
+
+
+
+div.user-comment h4 {
+    border-bottom: 1px dotted #ccc;
+    font: 14px arial;
+    margin: 0px 0px 5px 0px;
+    background: url(../img/user_icon.gif) no-repeat;
+    padding-left: 20px;
+}
+div.user-comment h5 {
+    margin: 0px 0px 10px 0px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #999;
+}
+
+div.user-comment p {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+div.user-comment blockquote {
+    border-left: 6px solid #ccc;
+    padding-left: 6px;
+    font-style: italic;
+	margin-left: 20px;
+}
+h3.serif {
+    font: 16px droid-serif, georgia;
+    margin: 4px 0px 10px 0px;
+}
