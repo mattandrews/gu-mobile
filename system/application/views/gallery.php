@@ -1,11 +1,11 @@
 <script>
 $(document).ready(function(){
 
-	$('#container').bind('swipeleft',function(event, ui){
+	$('#container').bind('swiperight',function(event, ui){
 		$('#gallery-prev').click();
 	});
 
-	$('#container').bind('swiperight',function(event, ui){
+	$('#container').bind('swipeleft',function(event, ui){
 		$('#gallery-next').click();
 	});
 	
