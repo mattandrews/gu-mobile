@@ -20,9 +20,6 @@
 						<p>Posted on <?php echo date('l j F Y G.i e', strtotime($article->webPublicationDate)); ?> in <a href="<?php echo site_url('browse/bysection/' . $article->sectionId); ?>"><?php echo $article->sectionName; ?></a></p>
 					</div>	
 					
-					
-					
-					
 					<?php if(!empty($media)) {
 							foreach($media as $m) {
 								if($m->fields->width == '460') { ?>

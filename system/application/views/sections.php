@@ -14,15 +14,17 @@ $(document).ready(function(){
 	
 	<?php show_navbar(); ?>
 	
+	
 	<div data-role="content">
-
-		<div data-inline="true">
-			<a href="javascript://" id="deselect-sections" data-inline="true" data-icon="minus" data-role="button">Deselect all</a>
-			<a href="<?php echo site_url('browse/resetsections'); ?>" rel="external" data-inline="true" data-icon="refresh" data-role="button" data-theme="b">Reset default sections</a>
-			<a href="<?php echo site_url('browse/sequencesections'); ?>" rel="external" data-inline="true" data-icon="grid" data-role="button" data-theme="b">Customise section order</a>
+	
+		<h2>Section Options</h2>
+		<div data-role="controlgroup">
+			<a href="javascript://" id="deselect-sections" data-icon="minus" data-role="button" data-theme="d">Deselect all</a>
+			<a href="<?php echo site_url('browse/resetsections'); ?>" rel="external" data-icon="refresh" data-role="button" data-theme="d">Reset default sections</a>
+			<a href="<?php echo site_url('browse/sequencesections'); ?>" rel="external" data-icon="grid" data-role="button" data-theme="d">Customise section order</a>
 		</div>
 	
-
+		<h2>Choose Sections</h2>
 		<form method="post" action="<?php echo site_url('browse/updatesections'); ?>">
 			<?php foreach($sections as $s) { ?>
 			<div>

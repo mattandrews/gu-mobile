@@ -28,6 +28,10 @@
 							</div>
 						<?php } ?>
 					
+					<?php } else { 
+						if(isset($search)) { ?> 
+						<p>Sorry, no search results were found.
+						<?php } ?>
 					<?php } ?>
 					
 				<?php } ?>

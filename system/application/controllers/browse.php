@@ -16,10 +16,9 @@ class Browse extends My_Controller {
 			'pageSize' => 3,
 			'tag' => 'type/article'
 		);
-		
+		$data['title'] = 'guardian.co.uk home';
 		if($custom_sections = get_cookie('gu-section-prefs')) {
 			$data['sections'] = explode(',', $custom_sections);
-			$data['title'] = 'guardian.co.uk home';
 		} else {
 			$data['sections'] = array('news', 'sport', 'commentisfree', 'culture', 'business');
 		}
@@ -28,6 +27,8 @@ class Browse extends My_Controller {
 			if($s == 'news') { 
 				$params['tag'] = 'theguardian/mainsection/topstories';
 				unset($params['section']); 
+			} else {
+				$params['tag'] = 'type/article';
 			}
 			$obj = $this->getdata($params, 'search', TRUE);
 			$data['articles'][$s] = $obj->response->results;
@@ -231,6 +232,7 @@ class Browse extends My_Controller {
 			} else {
 				$query = $term;
 			}
+			$data['title'] = 'Search for "'.$query.'"';
 			$params = array(
 				'tag' => 'type/article',
 				'order-by' => 'newest',
